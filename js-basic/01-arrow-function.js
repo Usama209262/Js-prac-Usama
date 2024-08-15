@@ -19,10 +19,10 @@
 // browser mai jo bhi sab se ziyada global object hai wo window hai 
 
 
-const addOne = function () {
-    let username = "Usama Khan"
-    console.log(this.username);
-}
+// const addOne = function () {
+//     let username = "Usama Khan"
+//     console.log(this.username);
+
 // addOne()
 
 const one = () => {
@@ -47,6 +47,22 @@ const one = () => {
 
 // Object ko return karne k liye apko parenthesis
 
-const addTwo = (num1 , num2) => ({username : "UsamaKhan"})
+// const addTwo = (num1 , num2) => ({username : "UsamaKhan"})
     
-    console.log(addTwo(23,5))
+//     console.log(addTwo(23,5))
+
+// IFFE 
+
+(function chai(){
+    console.log(`Db Connected`);    
+})();
+
+((name) => {
+    console.log(`DB Connected Two ${name}`);
+})("Usama") 
+
+
+
+
+
+
