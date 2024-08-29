@@ -43,15 +43,79 @@
 //     index = index + 2   
 // }
 
-let myArray = ["Flash", "Batman", "Superman"]
-let arr = 0
-while (arr < myArray.length) {
-    console.log(`Value is ${myArray[arr]}`);
-    arr = arr + 1
+// let myArray = ["Flash", "Batman", "Superman"]
+// let arr = 0
+// while (arr < myArray.length) {
+//     console.log(`Value is ${myArray[arr]}`);
+//     arr = arr + 1
+// }
+
+// let score = 11
+// do {
+//     console.log(`Score is ${score}`);
+//     score++
+// } while (score <= 10);
+
+
+// for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
+    
+// }
+
+// for of loop 
+
+// [],[],[],[]
+// {},{},{},{}
+
+const arr = [1,2,3,4,5,6,7]
+for (const num of arr) {
+    // console.log(num);
 }
 
-let score = 11
-do {
-    console.log(`Score is ${score}`);
-    score++
-} while (score <= 10);
+ 
+const greeting = "Hello World"
+
+for (const greet of greeting) {
+    // console.log(`Each is Char is ${greet}`)
+}
+
+// MAP
+
+// const map = new Map()
+// map.set("IN", "India")
+// map.set("USA", "United States Of America")
+// map.set("FR", " FRANCE")
+// // console.log(map);
+
+
+// for (const [key,value] of map) {
+//     console.log(key,'',value) ;
+    
+// }
+
+
+// const myObject = {
+//     game1 : "NFS",
+//     game2 : "FREE FIRE",
+//     game3 : "CS",
+// }
+
+// yeh to kaam nahikar raha hai ( For of loop ) 
+// for (const [key , value] of myObject) {
+//     console.log(Key, " " , value);
+    
+// }
+
+// OBJECT PER FOR IN LOOP LAGTA HIA 
+
+
+const myObject = {
+    js : "javascript",
+    cpp : "c++",
+    rb : "ruby",
+    swift : "swift by Apple"
+}
+for (const key in myObject) {
+
+    console.log(`${key} shortcut is for ${myObject[key]}`);
+}
