@@ -62,7 +62,7 @@
     
 // }
 
-// for of loop 
+// for of loop object 
 
 // [],[],[],[]
 // {},{},{},{}
@@ -79,7 +79,7 @@ for (const greet of greeting) {
     // console.log(`Each is Char is ${greet}`)
 }
 
-// MAP
+// MAP per itretion nahi kia jata hai 
 
 // const map = new Map()
 // map.set("IN", "India")
@@ -109,13 +109,67 @@ for (const greet of greeting) {
 // OBJECT PER FOR IN LOOP LAGTA HIA 
 
 
-const myObject = {
-    js : "javascript",
-    cpp : "c++",
-    rb : "ruby",
-    swift : "swift by Apple"
-}
-for (const key in myObject) {
+// const myObject = {
+//     js : "javascript",
+//     cpp : "c++",
+//     rb : "ruby",
+//     swift : "swift by Apple"
+// }
+// for (const key in myObject) {
 
-    console.log(`${key} shortcut is for ${myObject[key]}`);
-}
+//     console.log(`${key} shortcut is for ${myObject[key]}`);
+// }
+
+// Function 
+
+const coding = ["js","ruby","c++","python","java"]
+// coding.forEach( function (val) {
+//     console.log(val);
+    
+// }
+// )
+
+// Arrow Function 
+
+// coding.forEach((item)=>{
+//     console.log(item);
+    
+
+// })
+
+// function printMe(item){
+//     console.log(item);
+    
+// }
+// coding.forEach(printMe)
+
+// coding.forEach((val,index,arr)=>{
+//     console.log(val,index,arr);
+    
+// })
+
+// Array mai se Object ki Value niklna ( Foreach )
+
+const myCoding =[
+    {
+    languageName : "javascritp",
+    languageFileName: "js",
+},
+    {
+    languageName : "java",
+    languageFileName: "java",
+},
+    {
+    languageName : "python",
+    languageFileName: "py",
+},
+    {
+    languageName : "cpp",
+    languageFileName: "c++",
+},
+]
+
+myCoding.forEach((item)=>{
+console.log(item.languageFileName);
+
+})
