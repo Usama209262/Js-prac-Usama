@@ -19,15 +19,29 @@ const myNums = [1,2,3,4,5,6,7,8,9,10]
 // console.log(myNewNums);
 
 // forEach per chale ga 
+// forEach return nahi karta hia kuch bhi 
+// const newNums = []
+
+// myNums.forEach((num)=>{
+// if (num > 6) {
+//     newNums.push(num)
+// }
+
+// } )
+// console.log(newNums);
+
+
 const newNums = []
 
 myNums.forEach((num)=>{
-if (num > 6) {
-    newNums.push(num)
-}
-
-} )
+    if (num > 6) {
+        newNums.push(num)
+        
+    }
+})
 console.log(newNums);
+
+
 
 
 
